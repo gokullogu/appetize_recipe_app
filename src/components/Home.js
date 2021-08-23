@@ -29,7 +29,7 @@ export default function Home(){
              <Alert variant="primary" style={{ margin: '25px' }}>
                  <h3>Recommended for you</h3>
              </Alert>
-             <div className="recipe_container" style={{width:'85%',margin:'0px auto'}}>
+             <div className="recipe_card" style={{width:'85%',margin:'0px auto'}}>
                  <div className="recipes">
                      {recipe.map(recipe => (
                          <CardComp className="recipeCard"
@@ -46,7 +46,6 @@ export default function Home(){
                          />
                      ))}
                  </div>
-
              </div>
         <FormComp />
          </div>

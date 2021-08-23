@@ -18,7 +18,7 @@ const CardComp = ({ title, calories, image, ingredients, cuisine, meal, url, hea
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     return(
-           <Card style={{ width: '20rem'/* ,height:'500px' ,overflowY:'hidden' */, marginBottom: '35px', height: 'auto' }}>
+           <Card class="recipe_cont" style={{ width: '20rem'/* ,height:'500px' ,overflowY:'hidden' */, marginBottom: '35px', height: 'auto' }}>
                 <Card.Img variant="top" src={image}></Card.Img>
                     <Card.Body>
                         <Card.Title>{title}</Card.Title>
@@ -34,7 +34,11 @@ const CardComp = ({ title, calories, image, ingredients, cuisine, meal, url, hea
                 </Button>
                 <Modal fullscreen={true} show={show} onHide={handleClose}>
                     <Modal.Header closeButton>
-                        <Modal.Title>{title}</Modal.Title>
+                        <Modal.Title style={{ width: '100%',textAlign:'center'}}>
+                            <Alert variant="danger">
+                                {title}
+                            </Alert>
+                        </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
                         <Card.Img variant="top" src={image} style={{height:'20%'}}></Card.Img>

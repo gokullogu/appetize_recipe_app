@@ -64,15 +64,9 @@ const JumbotranComp =()=>{
                 {
                     ifnoresult()
                 }
-                <div className="recipes" id="reci">
+              {/*   <div className="recipe_card" id="reci">
                     {recipe.map(recipe => (
-                        <CardComp className="recipeCard"
-                           /*  key={recipe.recipe.label}
-                            title={recipe.recipe.label}
-                            calories={recipe.recipe.calories}
-                            image={recipe.recipe.image}
-                            ingredients={recipe.recipe.ingredients}
-                            url={recipe.recipe.url} */
+                        <CardComp className="recipes"
                             key={recipe.recipe.label}
                             title={recipe.recipe.label}
                             calories={recipe.recipe.calories}
@@ -85,6 +79,24 @@ const JumbotranComp =()=>{
                             url={recipe.recipe.url}
                         />
                     ))}
+                </div> */}
+                <div className="recipe_card" style={{ width: '85%', margin: '0px auto' }}>
+                    <div className="recipes">
+                        {recipe.map(recipe => (
+                            <CardComp className="recipeCard"
+                                key={recipe.recipe.label}
+                                title={recipe.recipe.label}
+                                calories={recipe.recipe.calories}
+                                image={recipe.recipe.image}
+                                ingredients={recipe.recipe.ingredients}
+                                cuisine={recipe.recipe.cuisineType[0]}
+                                meal={recipe.recipe.mealType}
+                                healthlabel={recipe.recipe.healthLabels}
+                                protein={recipe.recipe.totalDaily}
+                                url={recipe.recipe.url}
+                            />
+                        ))}
+                    </div>
                 </div>
             </Jumbotron>
         </div>

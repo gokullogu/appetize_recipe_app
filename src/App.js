@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
     <div>
-     <NavbarComp style={{position:'sticky',top:0}} 
+        <NavbarComp
         item1="home"
         item2="contact"
         item3="about us"/>

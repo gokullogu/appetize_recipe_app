@@ -10,8 +10,8 @@ import { Link } from 'react-router-dom'
 const NavbarComp = ({ item1, item2, item3,/*  searchvalue */})=>{
 
     return(
-        <Navbar bg="primary" variant="dark" >
-            <Navbar.Brand href="#home">
+        <Navbar bg="primary" variant="dark" sticky="top" collapseOnSelect expand="lg">
+            <Navbar.Brand href="/">
                 <img
                     src="./mylogoo.png"
                     width="40"
@@ -19,7 +19,7 @@ const NavbarComp = ({ item1, item2, item3,/*  searchvalue */})=>{
                     className="d-inline-block align-top"
                     alt="logo"
                 />
-                <span style={{position:'relative',top:'3.5px',left:'10px',padding:'0',alignItems:'center',color:'#FED047'}}>Appetizing Recipes</span>
+                <span style={{position:'relative',top:'-3px',left:'10px',padding:'0',alignItems:'center',fontWeight:'bold',fontFamily:'Dancing Script,cursive',fontSize:'30px'}}>Appetizing Recipes</span>
             </Navbar.Brand> 
             <Nav className="mr-auto" style={{marginLeft:'25px'}}>
                 <Nav.Link href="/">{item1}</Nav.Link>
