@@ -1,0 +1,85 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.recipes{
+ display: grid;
+ grid-template-columns: auto auto auto;
+/*  align-items: center;
+ */    width: 98%;
+   margin: 0px auto;
+   margin-top: 10px;
+}
+ 
+.recipes .recipeCard{
+   /* background-color: aqua  */
+   /* align-items: center;
+    */text-align: center;
+} 
+
+
+
+
+.ingredient{
+   padding: 5px;
+    list-style-type: none;
+    display: grid;
+    grid-column-gap:10px ;
+    grid-row-gap:5px;
+    align-items:center;
+    text-align: center;
+}
+
+.ingredient li{
+    padding: 15px;
+    text-align:start;
+    background-color: rgb(233, 233, 233);
+    border-left: 2px solid #0069D9;
+}
+
+
+.ing_title{
+    background-color: #0069D9;
+    padding: 5px;
+    margin: 5px;
+    width: 90px;
+    border-radius: 20px;
+    color: white;
+}
+
+.welcomePage{
+    display: flex;
+    flex-direction: column;
+    min-height:500px;
+    background-image:  linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.5)), url('https://images.pexels.com/photos/8844888/pexels-photo-8844888.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+    background-position: center;
+    background-size: cover;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.welcomePage Form{
+    margin-top: 100px;
+}
+
+/* .welcomePage Form FormControl{
+    padding: 20px;
+    background-color: antiquewhite;
+} */
+
+/* for mobiles */
+/* @media(max-width:1204px){
+    .recipe_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recipe{
+        display: flex;
+        flex-direction: column;
+    }
+}
+ */
